@@ -44,6 +44,41 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
           html: {
             fontSize: `16px`,
           },
+          table: {
+            width: '100%',
+          },
+        },
+        table: {
+          minWidth: '50%',
+        },
+        "table tr td": {
+          borderTop: "1px solid",
+          verticalAlign: "top",
+        },
+        "table th": {
+          textAlign: "left",
+        },
+        h2: {
+          textTransform: 'uppercase',
+        },
+        "h4 > small": {
+          fontSize: '.7em',
+          display: 'block',
+          textTransform: 'uppercase',
+          fontWeight: 'normal',
+          // opacity: .5,
+        },
+        "h4 > small > em": {
+          display: 'inline-block',
+          backgroundColor: '#eee',
+          padding: '.125em .5em',
+          marginLeft: '-.5em',
+          marginBottom: '.25em',
+          borderRadius: '.25em',
+        },
+        ".skill-level": {
+          textAlign: 'right',
+          display: 'block',
         },
       })}
     />
