@@ -33,7 +33,7 @@ const SKIP_TARGET_ID = `skip-here`
 export function SkipNavTrigger({ children = `Skip to content`, targetId = SKIP_TARGET_ID }: SkipNavProps) {
   const [hasAValidTarget, setHasAValidTarget] = React.useState<boolean>(false)
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     const target = document.getElementById(targetId)
 
     if (!!target !== hasAValidTarget) {
