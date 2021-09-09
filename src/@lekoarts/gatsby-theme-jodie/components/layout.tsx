@@ -47,9 +47,17 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
           table: {
             width: '100%',
           },
+          ".row": {
+            flexDirection: "column",
+          },
+        },
+        ".row": {
+          display: "flex",
+          alignItems: "flex-start",
         },
         table: {
           minWidth: '50%',
+          maxWidth: 'calc(100% - 2rem)',
         },
         "table tr td": {
           borderTop: "1px solid",
