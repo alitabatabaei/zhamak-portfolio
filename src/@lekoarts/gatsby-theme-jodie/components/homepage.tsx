@@ -9,7 +9,6 @@ import { itemListWrapperStyles, itemStyles } from "../styles/item-list"
 import locales from "../locales"
 import { visuallyHidden } from "../styles/utils"
 import modifyGrid from "@lekoarts/gatsby-theme-jodie/src/utils/modify-grid"
-import { onlyProjects } from "@lekoarts/gatsby-theme-jodie/src/utils/resolver-templates"
 
 type DataProps = {
   projects: {
@@ -39,10 +38,11 @@ type DataProps = {
 }
 
 const Homepage: React.FC<PageProps<DataProps>> = ({ data: { pages, projects } }) => {
-  const rawItems = [...pages.nodes, ...projects.nodes]
-  const items = modifyGrid(rawItems).reverse()
+  // const pageItems = pages.nodes.filter(({ slug }) => slug === '/art');
+  const rawItems = [...projects.nodes]
+  const items = modifyGrid(rawItems)
   const itemsCount = items.length
-  let divisor = 9
+  let divisor = 12
 
   for (let i = 0; i < itemsCount; i++) {
     const quotient = itemsCount % divisor
