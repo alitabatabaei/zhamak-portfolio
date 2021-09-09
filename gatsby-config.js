@@ -14,8 +14,8 @@ module.exports = {
       // See the theme's README for all available options
       options: {
         navigation: [
-          { name: `Projects`, slug: `/projects` },
           { name: `About`, slug: `/about` },
+          { name: `Projects`, slug: `/projects` },
           { name: `Publications`, slug: `/publications` },
           { name: `Certificates`, slug: `/certificates` },
           { name: `CV`, slug: '/cv' },
