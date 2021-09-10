@@ -5,6 +5,7 @@ const styles = {
   height: 150,
   borderRadius: 150,
   border: '1px solid black',
+  display: 'block',
 }
 const Logo = () => (
   <img src="/icon.jpg" style={styles} />
