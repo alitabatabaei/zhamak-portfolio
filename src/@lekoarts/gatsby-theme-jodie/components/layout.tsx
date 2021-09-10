@@ -25,6 +25,9 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
         img: {
           borderStyle: `none`,
         },
+        "ul > li": {
+          listStyleType: 'square',
+        },
         pre: {
           fontFamily: `monospace`,
           fontSize: `1em`,
@@ -88,6 +91,11 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
         ".skill-level": {
           textAlign: 'right',
           display: 'block',
+        },
+        "@media print": {
+          ".screen-only": {
+            display: "none",
+          },
         },
       })}
     />
