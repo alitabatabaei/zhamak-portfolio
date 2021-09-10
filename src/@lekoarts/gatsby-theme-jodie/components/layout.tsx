@@ -20,6 +20,7 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
         html: {
           fontSize: `18px`,
           WebkitTextSizeAdjust: `100%`,
+          scrollBehavior: `smooth`,
         },
         img: {
           borderStyle: `none`,
