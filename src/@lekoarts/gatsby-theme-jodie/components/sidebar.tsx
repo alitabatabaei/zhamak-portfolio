@@ -30,7 +30,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
       }}
       data-testid="sidebar"
     >
-      <Link to="/" aria-label={`${siteTitle}, Back to Home`} sx={{ width: [`3rem`, `4rem`, `4.5rem`, `5rem`] }}>
+      <Link to="/" aria-label={`${siteTitle}, Back to Home`} sx={{ flexShrink: 0, width: [`5rem`, `5rem`, `6rem`, `8rem`] }}>
         <Logo />
       </Link>
       <div sx={{ py: 4, display: [`none`, `none`, `none`, `block`] }} />

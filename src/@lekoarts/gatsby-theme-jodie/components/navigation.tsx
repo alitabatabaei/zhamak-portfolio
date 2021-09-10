@@ -17,6 +17,9 @@ const Navigation = ({ bg }: { bg: string }) => {
           textDecoration: `none`,
           fontSize: [1, 2, 2, 3],
           marginLeft: [2, 3, 3, 0],
+          borderLeftStyle: 'solid',
+          borderLeftWidth: [1, 1, 1, 0],
+          paddingLeft: ['.5em', '.5em', '.5em', 0],
           "&:hover,&:focus": {
             color: readableColor(bg, `primary`, `primaryLight`, false),
           },
