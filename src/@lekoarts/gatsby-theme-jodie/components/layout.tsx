@@ -25,8 +25,14 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
         img: {
           borderStyle: `none`,
         },
+        ".icon": {
+          width: `1em`,
+          height: `1em`,
+          margin: `0 .25em`,
+          verticalAlign: `middle`,
+        },
         "ul > li": {
-          listStyleType: 'square',
+          listStyleType: `square`,
         },
         pre: {
           fontFamily: `monospace`,
