@@ -31,6 +31,18 @@ const Layout = ({ children, color = `white` }: LayoutProps) => (
           margin: `0 .25em`,
           verticalAlign: `middle`,
         },
+        ".button": {
+          display: `inline-block`,
+          padding: `.25em .75em`,
+          border: `1px solid`,
+          borderRadius: `.25rem`,
+        },
+        ".mb": {
+          marginBottom: `1em`,
+        },
+        ".mr": {
+          marginRight: `1em`,
+        },
         "ul > li": {
           listStyleType: `square`,
         },
